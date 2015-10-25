@@ -82,10 +82,6 @@ var createRotatedDiv = function(g, box, axis, classes, html) {
   // TODO: combine inner_div and class_div.
   inner_div.className = 'dygraph-label-rotate-' + (axis == 1 ? 'right' : 'left');
 
-  // CSS rotation is an HTML5 feature which was only recently (2015)
-  // standardized. IE9 and Safari 8 still require prefixes. See
-  var val = 'rotate(' + (axis == 1 ? '-' : '') + '90deg)';
-
   var class_div = document.createElement("div");
   class_div.className = classes;
   class_div.innerHTML = html;
