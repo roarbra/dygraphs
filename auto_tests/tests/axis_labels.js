@@ -771,24 +771,6 @@ it('testAxisLabelFontSizeNull', function() {
   assertFontSize(document.querySelectorAll(".dygraph-axis-label-y"), "14px");
 });
 
-it('testAxisLabelColorNull', function() {
-  var graph = document.getElementById("graph");
-  var g = new Dygraph(graph, simpleData,
-    {
-      axisLabelColor: null
-    });
-
-  var assertColor = function(selector, expected) {
-    Util.assertStyleOfChildren(selector, "color", expected);
-  }
-
-  // Be sure we're dealing with a 14-point default.
-  assert.equal(14, DEFAULT_ATTRS.axisLabelFontSize);
-
-  assertColor(document.querySelectorAll(".dygraph-axis-label-x"), "rgb(0, 0, 0)");
-  assertColor(document.querySelectorAll(".dygraph-axis-label-y"), "rgb(0, 0, 0)");
-});
-
 /*
  * This test shows that the label formatter overrides labelsKMB for all values.
  */

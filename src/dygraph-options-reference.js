@@ -41,12 +41,6 @@ OPTIONS_REFERENCE =  // <JSON>
     "type": "integer",
     "description": "The size of the dot to draw on each point in pixels (see drawPoints). A dot is always drawn when a point is \"isolated\", i.e. there is a missing point on either side of it. This also controls the size of those dots."
   },
-  "labelsDivStyles": {
-    "default": "null",
-    "labels": ["Legend"],
-    "type": "{}",
-    "description": "Additional styles to apply to the currently-highlighted points div. For example, { 'fontWeight': 'bold' } will make the labels bold. In general, it is better to use CSS to style the .dygraph-legend class than to use this property."
-  },
   "drawPoints": {
     "default": "false",
     "labels": ["Data Line display"],
@@ -679,12 +673,6 @@ OPTIONS_REFERENCE =  // <JSON>
     "labels": ["Error Bars", "Data Series Colors"],
     "type": "float (0.0 - 1.0)",
     "description" : "Error bars (or custom bars) for each series are drawn in the same color as the series, but with partial transparency. This sets the transparency. A value of 0.0 means that the error bars will not be drawn, whereas a value of 1.0 means that the error bars will be as dark as the line for the series itself. This can be used to produce chart lines whose thickness varies at each point."
-  },
-  "axisLabelColor": {
-    "default": "black",
-    "labels": ["Axis display"],
-    "type": "string",
-    "description" : "Color for x- and y-axis labels. This is a CSS color string."
   },
   "axisLabelWidth": {
     "default": "50 (y-axis), 60 (x-axis)",

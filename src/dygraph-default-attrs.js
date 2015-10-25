@@ -12,9 +12,6 @@ var DEFAULT_ATTRS = {
   highlightSeriesBackgroundAlpha: 0.5,
 
   labelsDivWidth: 250,
-  labelsDivStyles: {
-    // TODO(danvk): move defaults from createStatusMessage_ here.
-  },
   labelsSeparateLines: false,
   labelsShowZeroValues: true,
   labelsKMB: false,
